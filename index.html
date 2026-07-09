@@ -957,16 +957,13 @@ body.washing{overflow:hidden}
       </div>
     </div>
 
-    <!-- Estimate requests are delivered by FormSubmit (free) to the address below.
-         ONE-TIME ACTIVATION: the first submission triggers an activation email to that
-         address — click the link inside it once and every request after that lands
-         directly in the inbox. To change the destination, replace the email in BOTH
-         the action attribute and the fetch URL in the form script near the bottom. -->
-    <form class="form reveal" id="estimateForm" action="https://formsubmit.co/Jack@primepowerwashstl.com" method="POST">
-      <input type="hidden" name="_subject" value="New estimate request — primepowerwashstl.com" />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+    <!-- Estimate requests are delivered by Web3Forms to Jack@primepowerwashstl.com
+         (the email tied to the access key below). Manage at https://web3forms.com -->
+    <form class="form reveal" id="estimateForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="38ff6b4d-d1d2-4986-ab35-2a7956e4953f" />
+      <input type="hidden" name="subject" value="New estimate request — primepowerwashstl.com" />
+      <input type="hidden" name="from_name" value="Prime Power Wash Website" />
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
       <div class="row">
         <div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Jane Smith" /></div>
         <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required placeholder="(314) 000-0000" /></div>
@@ -1061,12 +1058,12 @@ form.addEventListener('submit',e=>{
   const btn=form.querySelector('button[type="submit"]');
   const orig=btn.textContent;
   btn.disabled=true;btn.textContent='Sending…';
-  fetch('https://formsubmit.co/ajax/Jack@primepowerwashstl.com',{
+  fetch('https://api.web3forms.com/submit',{
     method:'POST',
     headers:{'Accept':'application/json'},
     body:new FormData(form)
-  }).then(r=>{
-    if(!r.ok)throw new Error('send failed');
+  }).then(r=>r.json()).then(res=>{
+    if(!res.success)throw new Error('send failed');
     form.innerHTML='<h3 style="font-family:var(--font-display);font-size:1.4rem">Request received ✓</h3>'+
       '<p style="margin-top:.6rem">Thanks — we\'ll get back to you today with your free estimate. '+
       'Need it faster? Call or text <a href="tel:+13142296210" style="font-weight:700">(314) 229-6210</a>.</p>';
