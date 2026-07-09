@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- ============================================================
+     SEO  — edit the description if you tweak your services
+============================================================ -->
+<title>Prime Power Wash | Pressure &amp; Soft Washing in St. Louis, MO</title>
+<meta name="description" content="Professional pressure washing, house &amp; roof soft washing, window cleaning and deck restoration in the Greater St. Louis area. Locally owned. Free in-person estimates. Call (314) 229-6210." />
+<meta property="og:title" content="Prime Power Wash | Pressure Washing in St. Louis, MO" />
+<meta property="og:description" content="Exterior cleaning done right — concrete, house washing, roof soft washing & more across St. Louis. Free estimates: (314) 229-6210." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.primepowerwashstl.com" />
+<meta property="og:image" content="https://www.primepowerwashstl.com/images/hero-after.webp" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="canonical" href="https://www.primepowerwashstl.com/" />
+
+<!-- Local SEO: tells Google exactly what/where you are. Update sameAs links as you add profiles. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Prime Power Wash",
+  "url": "https://www.primepowerwashstl.com",
+  "telephone": "+1-314-229-6210",
+  "email": "Jack@primepowerwashstl.com",
+  "description": "Pressure washing, house and roof soft washing, window cleaning and deck restoration in the Greater St. Louis area.",
+  "areaServed": ["St. Louis", "St. Louis County", "Clayton", "Kirkwood", "Webster Groves", "Ladue", "Creve Coeur", "Chesterfield", "Ballwin", "University City"],
+  "address": { "@type": "PostalAddress", "addressLocality": "St. Louis", "addressRegion": "MO", "addressCountry": "US" },
+  "priceRange": "$$",
+  "sameAs": ["https://www.instagram.com/primepowerwashstl/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What's the difference between pressure washing and soft washing?", "acceptedAnswer": { "@type": "Answer", "text": "Pressure washing uses higher water pressure for durable surfaces like concrete and brick. Soft washing uses low pressure plus cleaning solutions to safely clean siding, roofs and other surfaces that high pressure can damage. We match the method to the material." } },
+    { "@type": "Question", "name": "How much does pressure washing cost in St. Louis?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the surface, square footage and buildup. We provide free in-person estimates so you get a firm, honest price before any work starts. Call or text (314) 229-6210." } },
+    { "@type": "Question", "name": "Will pressure washing damage my siding or roof?", "acceptedAnswer": { "@type": "Answer", "text": "Not when the right method is used. Delicate surfaces like vinyl siding and shingles are cleaned with low-pressure soft washing, which removes algae and grime without damage." } },
+    { "@type": "Question", "name": "How often should I have my home's exterior cleaned?", "acceptedAnswer": { "@type": "Answer", "text": "Most St. Louis homes benefit from cleaning every 12 to 24 months. Shaded or heavily treed properties may need it more often because algae and mildew grow faster." } }
+  ]
+}
+</script>
+
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+============================================================ */
+:root{
+  --ink:#081c48;
+  --deep:#10306e;
+  --brand:#2f81e3;
+  --aqua:#22c9e0;
+  --aqua-soft:#7fe3f0;
+  --foam:#eaf0fb;
+  --paper:#ffffff;
+  --text:#0d1f3d;
+  --muted:#5d6f8c;
+  --line:#d9e2f2;
+
+  --font-display:"Archivo",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,sans-serif;
+  --font-mono:"Space Mono",ui-monospace,monospace;
+
+  --maxw:1180px;
+  --pad:clamp(20px,5vw,72px);
+  --radius:18px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#ffffff}
+body{
+  font-family:var(--font-body);
+  color:var(--text);
+  background:var(--paper);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
+
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:.72rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--brand);
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter-spacing:-.01em}
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+.btn{
+  display:inline-flex;align-items:center;gap:.55em;
+  font-family:var(--font-display);font-weight:700;font-size:.98rem;
+  letter-spacing:.01em;
+  padding:.85em 1.4em;border-radius:999px;
+  cursor:pointer;border:2px solid transparent;
+  transition:transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  white-space:nowrap;
+}
+.btn--primary{background:var(--aqua);color:var(--ink);box-shadow:0 8px 24px -8px rgba(34,201,224,.7)}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -8px rgba(34,201,224,.8)}
+.btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn--ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn--dark{background:var(--ink);color:#fff}
+.btn--dark:hover{transform:translateY(-2px);background:var(--deep)}
+
+/* ============================================================
+   HEADER
+============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(8,28,72,.1);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;color:var(--ink)}
+.brand__logo{display:block;height:46px;width:auto;object-fit:contain}
+.brand__logo--footer{height:40px;width:auto}
+.brand__mark{
+  width:34px;height:34px;border-radius:9px;flex:none;
+  background:linear-gradient(150deg,var(--aqua),var(--brand));
+  display:grid;place-items:center;color:var(--ink);
+  box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.25);
+}
+.brand__mark svg{width:20px;height:20px}
+.brand__name{font-family:var(--font-display);font-weight:900;letter-spacing:.02em;font-size:1.18rem;line-height:1}
+.brand__name span{color:var(--aqua)}
+.nav__links{display:flex;align-items:center;gap:1.6rem}
+.nav__links a{color:rgba(8,28,72,.78);font-size:.94rem;font-weight:500;transition:color .15s}
+.nav__links a:hover{color:var(--ink)}
+.nav__cta{display:flex;align-items:center;gap:.8rem}
+.nav__phone{color:var(--ink);font-family:var(--font-display);font-weight:700;font-size:1rem;display:flex;align-items:center;gap:.4rem}
+.nav__phone svg{width:16px;height:16px;color:var(--brand)}
+.nav__toggle{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:6px}
+.nav__toggle svg{width:26px;height:26px}
+@media(max-width:900px){
+  .nav__links,.nav__phone{display:none}
+  .nav__toggle{display:block}
+}
+
+/* mobile menu */
+.mobile-menu{
+  position:fixed;inset:72px 0 auto 0;z-index:49;
+  background:#fff;
+  transform:translateY(-120%);transition:transform .3s ease;
+  border-bottom:1px solid rgba(8,28,72,.12);
+  box-shadow:0 18px 30px -18px rgba(8,28,72,.25);
+  padding:1rem var(--pad) 1.6rem;
+}
+.mobile-menu.open{transform:translateY(0)}
+.mobile-menu a{display:block;color:var(--ink);padding:.8rem 0;font-family:var(--font-display);font-weight:600;border-bottom:1px solid rgba(8,28,72,.08)}
+.mobile-menu .btn{display:flex;margin-top:1rem;width:100%;justify-content:center;text-align:center}
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero{position:relative;background:radial-gradient(120% 120% at 0% 0%,var(--deep),var(--ink) 70%);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-10%;top:-20%;width:60%;height:140%;
+  background:radial-gradient(circle,rgba(34,201,224,.18),transparent 60%);pointer-events:none}
+.hero__inner{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center;
+  padding-block:clamp(3rem,7vw,5.5rem);position:relative;z-index:1}
+.hero__copy h1{font-size:clamp(2.4rem,5.6vw,4.1rem);margin:.5rem 0 .1rem}
+.hero__copy h1 em{font-style:normal;color:var(--aqua)}
+.hero__sub{font-size:clamp(1.02rem,1.6vw,1.18rem);color:rgba(255,255,255,.8);max-width:30ch;margin-top:1rem}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero__note{margin-top:1.3rem;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;
+  color:rgba(255,255,255,.55);text-transform:uppercase}
+
+@media(max-width:860px){
+  .hero__inner{grid-template-columns:1fr;text-align:left}
+  .hero__sub{max-width:none}
+  /* one flat color on phones — the radial gradient bands on tall narrow screens */
+  .hero{background:var(--ink)}
+  .hero::after{display:none}
+}
+
+/* ---- BEFORE / AFTER SLIDER (signature) ---- */
+.ba{
+  position:relative;aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 30px 60px -25px rgba(0,0,0,.6);
+  user-select:none;touch-action:pan-y;
+  background:#0c2630;
+}
+.ba__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba__after{}                                  /* clean = the real photo */
+.ba__before-layer{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+.ba__before-layer .ba__img{filter:none}
+
+.ba__tag{
+  position:absolute;top:14px;z-index:3;
+  font-family:var(--font-mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:.4em .8em;border-radius:999px;backdrop-filter:blur(4px);
+}
+.ba__tag--before{left:14px;background:rgba(0,0,0,.5);color:#fff}
+.ba__tag--after{right:14px;background:rgba(34,201,224,.9);color:var(--ink);font-weight:700}
+.ba__handle{
+  position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;background:#fff;z-index:4;
+  transform:translateX(-50%);box-shadow:0 0 0 1px rgba(0,0,0,.15);
+}
+.ba__grip{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:46px;height:46px;border-radius:50%;background:#fff;color:var(--brand);
+  display:grid;place-items:center;box-shadow:0 6px 16px rgba(0,0,0,.35);
+}
+.ba__grip svg{width:24px;height:24px}
+.ba__range{
+  position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:5;margin:0;
+}
+.ba__range:focus-visible + .ba__handle{outline:3px solid var(--aqua);outline-offset:2px;border-radius:4px}
+
+/* ============================================================
+   TRUST BAR
+============================================================ */
+.trust{background:var(--ink);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.trust__row{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 2.4rem;padding-block:1.1rem;text-align:center}
+.trust__item{display:flex;align-items:center;gap:.55rem;font-family:var(--font-display);font-weight:600;font-size:.92rem}
+.trust__item svg{width:18px;height:18px;color:var(--aqua);flex:none}
+
+/* ============================================================
+   SECTION SHELL
+============================================================ */
+.section{padding-block:clamp(3.5rem,8vw,6rem)}
+.section__head{max-width:60ch;margin-bottom:2.6rem}
+.section__head h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:.6rem 0 .4rem}
+.section__head p{color:var(--muted);font-size:1.05rem}
+.section--foam{background:var(--foam)}
+
+/* ============================================================
+   SERVICES
+============================================================ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+@media(max-width:860px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+.svc{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.6rem;display:flex;flex-direction:column;gap:.7rem;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.svc:hover{transform:translateY(-4px);box-shadow:0 22px 40px -28px rgba(16,48,110,.5);border-color:var(--aqua)}
+.svc__icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(150deg,var(--foam),#d6e2f8);
+  display:grid;place-items:center;color:var(--brand)}
+.svc__icon svg{width:26px;height:26px}
+.svc__spec{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+.svc h3{font-size:1.22rem}
+.svc p{color:var(--muted);font-size:.96rem;flex:1}
+
+/* ============================================================
+   WORK / GALLERY (hover or tap to reveal clean)
+============================================================ */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.gallery{grid-template-columns:1fr}}
+.tile{
+  position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;cursor:pointer;
+  background:#0c2630;box-shadow:0 18px 36px -26px rgba(0,0,0,.6);
+}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .img-before{transition:opacity .45s ease;z-index:1}
+.tile.is-clean .img-before,.tile:hover .img-before{opacity:0}
+.tile__label{
+  position:absolute;left:12px;top:12px;z-index:3;
+  font-family:var(--font-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
+  background:rgba(0,0,0,.55);color:#fff;padding:.35em .7em;border-radius:999px;backdrop-filter:blur(4px);
+}
+.tile.is-clean .tile__label,.tile:hover .tile__label{background:rgba(34,201,224,.92);color:var(--ink);font-weight:700}
+.tile__hint{
+  position:absolute;right:12px;bottom:12px;z-index:3;
+  font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);background:rgba(0,0,0,.4);padding:.3em .6em;border-radius:999px;
+}
+.tile.is-clean .tile__hint,.tile:hover .tile__hint{opacity:0}
+
+/* ============================================================
+   WHY / ABOUT
+============================================================ */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:820px){.why{grid-template-columns:1fr}}
+.why__media{position:relative;aspect-ratio:0.95}
+.why__media .media-main{position:absolute;top:0;left:0;width:64%;height:76%;object-fit:cover;
+  border-radius:var(--radius);box-shadow:0 28px 50px -30px rgba(16,48,110,.7);display:block}
+.why__media .media-inset{position:absolute;right:0;bottom:0;width:52%;height:55%;object-fit:cover;
+  border-radius:var(--radius);border:6px solid #fff;
+  box-shadow:0 24px 44px -26px rgba(16,48,110,.65);display:block}
+.why__list{list-style:none;margin-top:1.4rem;display:grid;gap:1rem}
+.why__list li{display:flex;gap:.8rem;align-items:flex-start}
+.why__list svg{width:22px;height:22px;color:var(--brand);flex:none;margin-top:3px}
+.why__list b{display:block;font-family:var(--font-display);font-size:1.02rem}
+.why__list span{color:var(--muted);font-size:.95rem}
+
+/* ============================================================
+   SEASONAL BAND
+============================================================ */
+.season{background:linear-gradient(120deg,var(--deep),var(--ink));color:#fff;border-radius:var(--radius);
+  padding:clamp(1.8rem,4vw,2.6rem);display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;justify-content:space-between;
+  position:relative;overflow:hidden}
+.season::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 90% 20%,rgba(34,201,224,.25),transparent 45%);pointer-events:none}
+.season__txt{position:relative;z-index:1;max-width:46ch}
+.season__txt h3{font-size:clamp(1.4rem,3vw,2rem);margin:.3rem 0}
+.season__txt p{color:rgba(255,255,255,.78)}
+
+/* ============================================================
+   AREAS
+============================================================ */
+.areas{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.areas span{
+  font-size:.9rem;font-weight:500;background:var(--paper);border:1px solid var(--line);
+  padding:.5em 1em;border-radius:999px;color:var(--text);
+}
+.areas span.more{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ============================================================
+   REVIEWS
+============================================================ */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+@media(max-width:820px){.reviews{grid-template-columns:1fr}}
+.review{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
+.review__stars{color:#f5a623;letter-spacing:.1em;font-size:1.05rem}
+.review p{margin:.7rem 0 1rem;color:var(--text)}
+.review__who{font-family:var(--font-display);font-weight:700;font-size:.95rem}
+.review__where{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.review-cta{margin-top:1.8rem;text-align:center;color:var(--muted)}
+
+/* ============================================================
+   CONTACT
+============================================================ */
+.contact{background:radial-gradient(120% 120% at 100% 0%,var(--deep),var(--ink));color:#fff}
+.contact__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4rem)}
+@media(max-width:820px){.contact__grid{grid-template-columns:1fr}}
+.contact h2{font-size:clamp(2rem,4vw,3rem)}
+.contact__sub{color:rgba(255,255,255,.8);margin-top:.8rem;max-width:38ch}
+.contact__lines{margin-top:2rem;display:grid;gap:1.1rem}
+.contact__line{display:flex;align-items:center;gap:.9rem;font-family:var(--font-display);font-weight:600}
+.contact__line a{color:#fff}
+.contact__line .ic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);
+  display:grid;place-items:center;flex:none}
+.contact__line .ic svg{width:20px;height:20px;color:var(--aqua)}
+.contact__line small{display:block;font-family:var(--font-body);font-weight:400;font-size:.78rem;color:rgba(255,255,255,.8)}
+
+.form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:clamp(1.4rem,3vw,2rem)}
+.form label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);margin:0 0 .35rem}
+.field{margin-bottom:1rem}
+.form input,.form select,.form textarea{
+  width:100%;font-family:var(--font-body);font-size:1rem;color:#fff;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:10px;
+  padding:.8em .9em;transition:border-color .15s,background .15s;
+}
+.form input::placeholder,.form textarea::placeholder{color:rgba(255,255,255,.4)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--aqua);background:rgba(255,255,255,.1)}
+.form select option{color:#0d2b33}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:480px){.form .row{grid-template-columns:1fr}}
+.form .btn{width:100%;justify-content:center;margin-top:.4rem}
+.form__fine{font-size:.78rem;color:rgba(255,255,255,.5);margin-top:.9rem;text-align:center}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.site-footer{background:var(--ink);color:rgba(255,255,255,.7);padding-block:2.6rem}
+.footer__top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center}
+.footer__links{display:flex;flex-wrap:wrap;gap:1.4rem}
+.footer__links a{font-size:.92rem}
+.footer__links a:hover{color:#fff}
+.footer__bottom{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.82rem}
+
+
+/* sticky mobile call bar */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
+  background:transparent;text-align:center;pointer-events:none;
+  padding:.55rem .8rem calc(.7rem + env(safe-area-inset-bottom))}
+.callbar__btn{display:block;background:var(--aqua);color:var(--ink);border-radius:999px;
+  font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:.02em;
+  padding:.85rem 1rem;pointer-events:auto;
+  box-shadow:0 10px 28px rgba(8,28,72,.38)}
+@media(max-width:900px){
+  .callbar{display:block}
+  .site-footer{padding-bottom:5.5rem}
+}
+
+/* FAQ */
+.faq{display:grid;gap:.8rem;max-width:760px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem}
+.faq summary{cursor:pointer;font-family:var(--font-display);font-weight:700;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.3rem;color:var(--brand);flex:none;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin-top:.7rem;color:var(--muted);font-size:.97rem}
+
+
+/* ============================================================
+   WASH-IN INTRO (page loads muddy, gets sprayed clean)
+   To remove: delete everything between the WASH-IN INTRO
+   START / END comments in <body>, plus this CSS block.
+============================================================ */
+#washOverlay{position:fixed;inset:0;z-index:9999;cursor:pointer;opacity:1;transition:opacity .5s ease}
+#washOverlay canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#washOverlay .wash-skip{position:absolute;right:16px;bottom:14px;z-index:2;
+  font-family:var(--font-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,255,255,.85);background:rgba(0,0,0,.45);padding:.45em .9em;border-radius:999px;pointer-events:none}
+body.washing{overflow:hidden}
+@media(prefers-reduced-motion:reduce){#washOverlay{display:none}}
+
+
+/* ---- gallery lightbox ---- */
+.lightbox{position:fixed;inset:0;z-index:200}
+.lightbox[hidden]{display:none}
+.lb__backdrop{position:absolute;inset:0;background:rgba(4,12,32,.88);backdrop-filter:blur(4px)}
+.lb__panel{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:1rem;padding:1.2rem}
+.lb__stage{--pos:50%;position:relative;aspect-ratio:4/3;width:min(92vw,calc(74vh*1.3333));
+  border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);user-select:none;touch-action:none}
+.lb__stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.lb__beforeWrap{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.lb__divider{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;background:#fff;
+  transform:translateX(-1.5px);pointer-events:none;box-shadow:0 0 14px rgba(0,0,0,.55);z-index:2}
+.lb__knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;
+  border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;
+  font-size:1rem;box-shadow:0 4px 16px rgba(0,0,0,.45)}
+.lb__tag{position:absolute;top:12px;z-index:3;font-family:var(--font-mono);font-size:.6rem;
+  letter-spacing:.14em;text-transform:uppercase;padding:.45em .9em;border-radius:999px;pointer-events:none}
+.lb__tag--b{left:12px;background:rgba(8,28,72,.8);color:#cfdcf5}
+.lb__tag--a{right:12px;background:var(--aqua);color:var(--ink);font-weight:700}
+.lb__range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;z-index:4}
+.lb__close{position:absolute;top:14px;right:16px;z-index:5;width:46px;height:46px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.35);background:rgba(8,28,72,.6);color:#fff;font-size:1.5rem;
+  line-height:1;cursor:pointer;display:grid;place-items:center}
+.lb__close:hover{background:var(--aqua);color:var(--ink);border-color:var(--aqua)}
+.lb__bar{display:flex;align-items:center;gap:1.2rem}
+.lb__nav{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
+  background:rgba(8,28,72,.6);color:#fff;font-size:1.35rem;cursor:pointer;display:grid;place-items:center;
+  transition:background .15s,color .15s}
+.lb__nav:hover{background:var(--aqua);color:var(--ink);border-color:var(--aqua)}
+.lb__meta{text-align:center;min-width:11rem}
+.lb__label{display:block;font-family:var(--font-display);font-weight:800;color:#fff;font-size:1.15rem}
+.lb__count{font-family:var(--font-mono);font-size:.65rem;letter-spacing:.15em;color:rgba(255,255,255,.65)}
+.lb__hint{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(255,255,255,.55)}
+@media(max-width:640px){
+  .lb__stage{width:94vw}
+  .lb__nav{width:46px;height:46px}
+}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+:focus-visible{outline:3px solid var(--aqua);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================ WASH-IN INTRO START
+     The page loads covered in mud, then gets "power washed" clean.
+     Plays once per browser session; click or press Esc to skip.
+     To play on EVERY load, delete the sessionStorage block in the script below.
+     To remove the effect entirely, delete from START to END. -->
+<div id="washOverlay" aria-hidden="true">
+  <canvas id="mudC"></canvas>
+  <canvas id="fxC"></canvas>
+  <span class="wash-skip">Click to skip</span>
+</div>
+<script>
+(function(){
+  var overlay=document.getElementById('washOverlay');
+  if(!overlay) return;
+  // Respect reduced motion
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){overlay.remove();return;}
+  // Play once per browser session (delete this block to play on every load)
+  try{
+    if(sessionStorage.getItem('ppwWashed')){overlay.remove();return;}
+    sessionStorage.setItem('ppwWashed','1');
+  }catch(e){}
+
+  document.body.classList.add('washing');
+  var mudC=document.getElementById('mudC'),fxC=document.getElementById('fxC');
+  var dpr=Math.min(window.devicePixelRatio||1,1.5);
+  var W=window.innerWidth,H=window.innerHeight;
+  [mudC,fxC].forEach(function(c){c.width=W*dpr;c.height=H*dpr;});
+  var m=mudC.getContext('2d'),f=fxC.getContext('2d');
+  m.scale(dpr,dpr);f.scale(dpr,dpr);
+
+  /* ---- paint the mud ---- */
+  var g=m.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#57432e');g.addColorStop(.5,'#4a3827');g.addColorStop(1,'#3a2d20');
+  m.fillStyle=g;m.fillRect(0,0,W,H);
+  var browns=['#5f4a33','#403122','#6b543a','#33281b','#4e412c','#57503a'];
+  var i,x,y,r;
+  for(i=0;i<320;i++){
+    x=Math.random()*W;y=Math.random()*H;r=8+Math.random()*70;
+    var rg=m.createRadialGradient(x,y,0,x,y,r);
+    var col=browns[(Math.random()*browns.length)|0];
+    rg.addColorStop(0,col);rg.addColorStop(1,'rgba(0,0,0,0)');
+    m.globalAlpha=.25+Math.random()*.5;m.fillStyle=rg;
+    m.beginPath();m.ellipse(x,y,r,r*(.5+Math.random()*.6),Math.random()*Math.PI,0,7);m.fill();
+  }
+  m.globalAlpha=1;
+  // speckles + drips
+  for(i=0;i<900;i++){
+    m.fillStyle='rgba(30,22,12,'+(Math.random()*.5)+')';
+    m.fillRect(Math.random()*W,Math.random()*H,1+Math.random()*3,1+Math.random()*3);
+  }
+  for(i=0;i<40;i++){
+    x=Math.random()*W;y=Math.random()*H*.7;
+    m.strokeStyle='rgba(40,30,18,'+(0.15+Math.random()*.3)+')';
+    m.lineWidth=2+Math.random()*5;m.lineCap='round';
+    m.beginPath();m.moveTo(x,y);m.quadraticCurveTo(x+(Math.random()*10-5),y+30,x,y+40+Math.random()*120);m.stroke();
+  }
+
+  /* ---- serpentine spray path ---- */
+  var rows=Math.max(3,Math.round(H/240));
+  var rowH=H/rows, radius=rowH*.72, pad=radius*.8;
+  var pts=[],rIdx;
+  for(rIdx=0;rIdx<rows;rIdx++){
+    var yy=rowH*rIdx+rowH/2;
+    pts.push(rIdx%2===0?[-pad,yy]:[W+pad,yy]);
+    pts.push(rIdx%2===0?[W+pad,yy]:[-pad,yy]);
+  }
+  var segs=[],total=0;
+  for(i=0;i<pts.length-1;i++){
+    var d=Math.hypot(pts[i+1][0]-pts[i][0],pts[i+1][1]-pts[i][1]);
+    segs.push({a:pts[i],b:pts[i+1],d:d});total+=d;
+  }
+  function pointAt(t){
+    var dist=t*total;
+    for(var s=0;s<segs.length;s++){
+      if(dist<=segs[s].d){var k=dist/segs[s].d;
+        return [segs[s].a[0]+(segs[s].b[0]-segs[s].a[0])*k, segs[s].a[1]+(segs[s].b[1]-segs[s].a[1])*k];}
+      dist-=segs[s].d;
+    }
+    return pts[pts.length-1];
+  }
+
+  /* ---- animation ---- */
+  var DUR=2600,start=null,prev=null,parts=[],done=false;
+  function erase(x,y){
+    var rg=m.createRadialGradient(x,y,0,x,y,radius);
+    rg.addColorStop(0,'rgba(0,0,0,1)');rg.addColorStop(.75,'rgba(0,0,0,.9)');rg.addColorStop(1,'rgba(0,0,0,0)');
+    m.globalCompositeOperation='destination-out';
+    m.fillStyle=rg;m.beginPath();m.arc(x,y,radius,0,7);m.fill();
+    for(var j=0;j<6;j++){ // ragged splatter edge
+      var a=Math.random()*Math.PI*2,rr=radius*(0.9+Math.random()*.5);
+      m.beginPath();m.arc(x+Math.cos(a)*rr,y+Math.sin(a)*rr,4+Math.random()*14,0,7);m.fill();
+    }
+    m.globalCompositeOperation='source-over';
+  }
+  function spray(x,y,vx,vy){
+    // scale the whole rig with the viewport so it reads clearly
+    var sc=Math.max(1.6,Math.min(W,H)/420);
+    var nx=x-110*sc*.9, ny=y-150*sc*.9;           // nozzle tip, up-left of impact
+    var ang=Math.atan2(y-ny,x-nx);
+    var ca=Math.cos(ang),sa=Math.sin(ang);
+    // lance (thick metallic barrel pointing at the impact)
+    var LL=95*sc, bx=nx-ca*LL, by=ny-sa*LL;        // back of lance
+    f.lineCap='round';
+    f.strokeStyle='rgba(20,40,50,.95)';f.lineWidth=11*sc;
+    f.beginPath();f.moveTo(bx,by);f.lineTo(nx,ny);f.stroke();
+    f.strokeStyle='rgba(200,225,235,.9)';f.lineWidth=4.5*sc;
+    f.beginPath();f.moveTo(bx,by);f.lineTo(nx,ny);f.stroke();
+    // nozzle head
+    f.fillStyle='rgba(20,40,50,.95)';
+    f.beginPath();f.arc(nx,ny,7*sc,0,7);f.fill();
+    // trigger gun + grip at the back
+    f.strokeStyle='rgba(20,40,50,.95)';f.lineWidth=13*sc;
+    f.beginPath();f.moveTo(bx,by);f.lineTo(bx-ca*26*sc,by-sa*26*sc);f.stroke();
+    f.lineWidth=10*sc;
+    f.beginPath();f.moveTo(bx-ca*20*sc,by-sa*20*sc);
+    f.lineTo(bx-ca*20*sc+sa*30*sc, by-sa*20*sc-(-ca)*30*sc);f.stroke(); // grip drops down
+    // high-pressure jet: bright core + wide cone
+    var jg=f.createLinearGradient(nx,ny,x,y);
+    jg.addColorStop(0,'rgba(200,240,252,.95)');jg.addColorStop(1,'rgba(200,240,252,.12)');
+    f.fillStyle=jg;
+    f.beginPath();f.moveTo(nx,ny);f.lineTo(x-radius*.85,y);f.lineTo(x+radius*.85,y);f.closePath();f.fill();
+    f.strokeStyle='rgba(235,250,255,.95)';f.lineWidth=3.5*sc;
+    f.beginPath();f.moveTo(nx,ny);f.lineTo(x,y);f.stroke();
+    // impact mist
+    var mg=f.createRadialGradient(x,y,0,x,y,radius*.9);
+    mg.addColorStop(0,'rgba(220,245,255,.5)');mg.addColorStop(1,'rgba(220,245,255,0)');
+    f.fillStyle=mg;f.beginPath();f.arc(x,y,radius*.9,0,7);f.fill();
+    for(var j=0;j<12;j++){
+      parts.push({x:x+(Math.random()*2-1)*radius*.7,y:y+(Math.random()*2-1)*radius*.5,
+        vx:vx*.3+(Math.random()*8-4),vy:-2.5-Math.random()*5,l:1});
+    }
+  }
+  function frame(ts){
+    if(done)return;
+    if(!start)start=ts;
+    var t=Math.min((ts-start)/DUR,1);
+    var e=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2; // easeInOut
+    var p=pointAt(e);
+    if(prev){
+      var steps=Math.ceil(Math.hypot(p[0]-prev[0],p[1]-prev[1])/(radius*.4))||1;
+      for(var s=1;s<=steps;s++) erase(prev[0]+(p[0]-prev[0])*s/steps, prev[1]+(p[1]-prev[1])*s/steps);
+    } else erase(p[0],p[1]);
+    f.clearRect(0,0,W,H);
+    if(t<1) spray(p[0],p[1],p[0]-(prev?prev[0]:p[0]),0);
+    for(var q=parts.length-1;q>=0;q--){
+      var pa=parts[q];pa.x+=pa.vx;pa.y+=pa.vy;pa.vy+=.5;pa.l-=.045;
+      if(pa.l<=0){parts.splice(q,1);continue;}
+      f.fillStyle='rgba(205,238,250,'+(pa.l*.9)+')';
+      f.beginPath();f.arc(pa.x,pa.y,1.5+pa.l*2.5,0,7);f.fill();
+    }
+    prev=p;
+    if(t>=1&&parts.length===0) finish(); else requestAnimationFrame(frame);
+  }
+  function finish(){
+    if(done)return;done=true;
+    overlay.style.opacity='0';
+    setTimeout(function(){overlay.remove();document.body.classList.remove('washing');},550);
+  }
+  overlay.addEventListener('click',finish);
+  window.addEventListener('keydown',function(ev){if(ev.key==='Escape')finish();});
+  setTimeout(finish,DUR+2200); // hard safety stop
+  requestAnimationFrame(frame);
+})();
+</script>
+<!-- ============================================================ WASH-IN INTRO END -->
+
+<!-- ============================================================ HEADER -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Prime Power Wash home">
+      <img class="brand__logo" src="images/logo-dark.png" width="119" height="46" alt="Prime Power Wash" />
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a class="nav__phone" href="tel:+13142296210">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        (314) 229-6210
+      </a>
+      <a class="btn btn--primary" href="#contact">Free Estimate</a>
+    </div>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#work">Our Work</a>
+  <a href="#about">About</a>
+  <a href="#areas">Areas</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn--primary" href="tel:+13142296210">Call (314) 229-6210</a>
+</div>
+
+<!-- ============================================================ HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">Pressure &amp; Soft Washing · St. Louis, MO</p>
+      <h1>Bring your property back to its <em>prime.</em></h1>
+      <p class="hero__sub">Concrete, house washing, roofs, windows, decks and more — restored with professional-grade equipment and a free in-person estimate.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contact">Get a free estimate</a>
+        <a class="btn btn--ghost" href="tel:+13142296210">Call (314) 229-6210</a>
+      </div>
+      <p class="hero__note">Drag the slider to see the difference →</p>
+    </div>
+
+    <!-- BEFORE / AFTER SIGNATURE -->
+    <div class="ba" id="ba">
+      <!-- AFTER (clean) = your real photo. Swap src for your own job photo. -->
+      <img class="ba__img ba__after" src="images/hero-after.webp" fetchpriority="high"
+           alt="Concrete patio in St. Louis restored to like-new after pressure washing by Prime Power Wash" />
+      <!-- BEFORE layer = same photo, darkened/grimed by CSS. For a real before photo, drop it in here. -->
+      <div class="ba__before-layer">
+        <img class="ba__img" src="images/hero-before.webp" fetchpriority="high"
+             alt="Same St. Louis patio covered in dirt and algae before cleaning" />
+        <span class="ba__tag ba__tag--before">Before</span>
+      </div>
+      <span class="ba__tag ba__tag--after">After</span>
+      <div class="ba__handle" aria-hidden="true">
+        <span class="ba__grip"><svg viewBox="0 0 24 24" fill="none"><path d="M8 7l-4 5 4 5M16 7l4 5-4 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <input class="ba__range" id="baRange" type="range" min="0" max="100" value="50" aria-label="Drag to compare the before and after" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ TRUST -->
+<div class="trust">
+  <div class="wrap trust__row">
+    <span class="trust__item"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Licensed &amp; Insured</span>
+    <span class="trust__item"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Free In-Person Estimates</span>
+    <span class="trust__item"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Satisfaction Guaranteed</span>
+    <span class="trust__item"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Locally Owned in STL</span>
+  </div>
+</div>
+
+<!-- ============================================================ SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">What we clean</p>
+      <h2>Exterior cleaning, done right.</h2>
+      <p>From soft washing that protects delicate surfaces to high-output cleaning for concrete, we match the method to the material — every time.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Surface cleaner · flatwork</span>
+        <h3>Concrete &amp; Driveways</h3>
+        <p>Driveways, walkways and patios stripped of dirt, oil and organic build-up — back to their original color.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Soft wash · low PSI</span>
+        <h3>House Washing</h3>
+        <p>A gentle soft-wash that lifts grime from brick, vinyl and stucco without damaging your siding or finish.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l9-8 9 8M5 11v9h14v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">No-pressure · algae &amp; mold</span>
+        <h3>Roof Soft Washing</h3>
+        <p>Removes black algae streaks, moss and mold to restore curb appeal and extend the life of your roof.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="1" stroke="currentColor" stroke-width="2"/><path d="M12 3v18M4 12h16" stroke="currentColor" stroke-width="2"/></svg></span>
+        <span class="svc__spec">Streak-free · sills &amp; trim</span>
+        <h3>Window Cleaning</h3>
+        <p>Crystal-clear glass plus the sills and trim that collect a year's worth of dust, pollen and cobwebs.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9h18M3 15h18M6 4v16M18 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="svc__spec">Wood-safe · restore</span>
+        <h3>Deck &amp; Fence</h3>
+        <p>Careful cleaning for all deck and fence types, lifting away gray weathering to reveal the wood beneath.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7h6v14M11 21V3h8v18M7 11h2M7 15h2M15 7h2M15 11h2M15 15h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">HOA · storefronts</span>
+        <h3>Commercial</h3>
+        <p>Storefronts, HOAs and commercial properties across St. Louis kept clean and presentable on your schedule.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ WORK -->
+<section class="section section--foam" id="work">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Our work</p>
+      <h2>See the transformation.</h2>
+      <p>Real jobs, real results — every photo below is our work. Hover or tap any photo to reveal the after.</p>
+    </div>
+
+    <div class="gallery">
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: brick cleaning">
+        <img src="images/patio-after.webp" alt="Brick wall and walkway clean after power washing" loading="lazy" />
+        <img class="img-before" src="images/patio-before.webp" alt="Brick wall stained with grime before power washing in St. Louis" loading="lazy" />
+        <span class="tile__label">Brick</span><span class="tile__hint">Click to compare</span>
+      </div>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: patio cleaning">
+        <img src="images/patio2-after.webp" alt="Paver patio clean and bright after power washing" loading="lazy" />
+        <img class="img-before" src="images/patio2-before.webp" alt="Paver patio dark with grime before power washing" loading="lazy" />
+        <span class="tile__label">Patio</span><span class="tile__hint">Click to compare</span>
+      </div>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: steps cleaning">
+        <img src="images/steps-after.webp" alt="Restored concrete steps after pressure washing" loading="lazy" />
+        <img class="img-before" src="images/steps-before.webp" alt="Grimy concrete steps before pressure washing" loading="lazy" />
+        <span class="tile__label">Steps</span><span class="tile__hint">Click to compare</span>
+      </div>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: concrete cleaning">
+        <img src="images/pavers-after.webp" alt="Concrete restored to its original color" loading="lazy" />
+        <img class="img-before" src="images/pavers-before.webp" alt="Stained concrete before surface cleaning" loading="lazy" />
+        <span class="tile__label">Concrete</span><span class="tile__hint">Click to compare</span>
+      </div>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: canvas awning cleaning">
+        <img src="images/backyard-after.webp" alt="Striped canvas awning bright and clean after washing" loading="lazy" />
+        <img class="img-before" src="images/backyard-before.webp" alt="Striped canvas awning weathered and dirty before cleaning" loading="lazy" />
+        <span class="tile__label">Canvas</span><span class="tile__hint">Click to compare</span>
+      </div>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: fence cleaning">
+        <img src="images/fence-after.webp" alt="White fence bright and clean after soft washing" loading="lazy" />
+        <img class="img-before" src="images/fence-before.webp" alt="White fence covered in algae and grime before cleaning" loading="lazy" />
+        <span class="tile__label">Fencing</span><span class="tile__hint">Click to compare</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ ABOUT / WHY -->
+<section class="section" id="about">
+  <div class="wrap why">
+    <div class="why__media reveal">
+      <img class="media-main" src="images/jack.webp" alt="Jack, owner of Prime Power Wash, with his pressure washing rig" loading="lazy" />
+      <img class="media-inset" src="images/yard-sign.webp" alt="Prime Power Wash yard sign on a freshly cleaned St. Louis property" loading="lazy" />
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Why Prime</p>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);margin:.5rem 0 .8rem">Local owners who treat your home like ours.</h2>
+      <p style="color:var(--muted)">We know how much your property is worth to you. Our technicians take real pride in their work, using the right method for every surface so your home is restored — never damaged — and looking its best.</p>
+      <ul class="why__list">
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>The right method, every time</b><span>Soft wash for delicate surfaces, higher output for concrete — no guesswork, no damage.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Free in-person estimates</b><span>We come out, look at the actual job, and give you an honest quote — no surprises.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Owner-operated &amp; insured</b><span>You deal directly with the people doing the work, start to finish.</span></div></li>
+      </ul>
+      <div class="hero__actions"><a class="btn btn--dark" href="#contact">Request your estimate</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ SEASONAL -->
+<section class="section" style="padding-top:0">
+  <div class="wrap reveal">
+    <div class="season">
+      <div class="season__txt">
+        <p class="eyebrow" style="color:var(--aqua-soft)">Seasonal</p>
+        <h3>Christmas light installation</h3>
+        <p>Skip the ladder this year. Ask about professional holiday light design, install and takedown across the St. Louis area.</p>
+      </div>
+      <a class="btn btn--primary" href="#contact">Ask about lights</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ AREAS -->
+<section class="section section--foam" id="areas">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Service area</p>
+      <h2>Proudly serving Greater St. Louis.</h2>
+      <p>Residential and commercial clients across the metro. Don't see your neighborhood? Reach out — we likely cover it.</p>
+    </div>
+    <div class="areas reveal">
+      <span>St. Louis County</span><span>St. Louis City</span><span>Clayton</span><span>Brentwood</span>
+      <span>Kirkwood</span><span>Webster Groves</span><span>Frontenac</span><span>Ladue</span>
+      <span>Creve Coeur</span><span>Town &amp; Country</span><span>Des Peres</span><span>Chesterfield</span>
+      <span>Ballwin</span><span>University City</span><span>Maryland Heights</span><span>Maplewood</span>
+      <span>Richmond Heights</span><span class="more">+ Surrounding Areas</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ REVIEWS -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Reviews</p>
+      <h2>What St. Louis is saying.</h2>
+      <p>Five-star Google reviews from recent jobs around the metro.</p>
+    </div>
+    <!-- Transcribed from your real Google review screenshots. Please give each quote a
+         quick read against the original review before launch to catch any transcription slips. -->
+    <div class="reviews">
+      <article class="review reveal">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>“This is a top-notch company! We used Prime Power Wash to clean our gutters and all exterior windows. The work was absolutely meticulous. We have used several companies in the past, including Shack Shine, but none have compared to the work done by Jack at Prime Power Wash. He removed sap from the windows and even cleaned our wood front door. The work was superior and the pricing was excellent!”</p>
+        <div class="review__who">Kathleen Molina</div>
+        <div class="review__where">Google review</div>
+      </article>
+      <article class="review reveal">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>“I had the best experience with Prime Power Wash! They provided a free consult, quote, and the results were amazing. The team was professional, efficient, and went above my expectations. I will definitely be using them again!”</p>
+        <div class="review__who">Taylor Ruwitch</div>
+        <div class="review__where">Google review</div>
+      </article>
+      <article class="review reveal">
+        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>“Good job, good price for gutter cleaning. Recommend.”</p>
+        <div class="review__who">Theodore Soule</div>
+        <div class="review__where">Google review</div>
+      </article>
+    </div>
+    <!-- Tip (not customer-facing): set up a free Google Business Profile and ask every happy customer for a review — it's the #1 driver of new local calls. -->
+  </div>
+</section>
+
+<!-- ============================================================ FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section__head reveal">
+      <p class="eyebrow">Good to know</p>
+      <h2>Questions we hear a lot.</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>What's the difference between pressure washing and soft washing?</summary>
+        <p>Pressure washing uses higher water pressure for tough, durable surfaces like concrete and brick. Soft washing uses low pressure plus cleaning solutions to safely clean siding, roofs and other surfaces that high pressure can damage. We match the method to the material — every time.</p>
+      </details>
+      <details>
+        <summary>How much does it cost?</summary>
+        <p>It depends on the surface, square footage and how much buildup there is. That's why estimates are free and in person — you get a firm, honest number before any work starts. Call or text (314) 229-6210 for the fastest answer.</p>
+      </details>
+      <details>
+        <summary>Will pressure washing damage my siding or roof?</summary>
+        <p>Not when the right method is used. Vinyl siding, shingles and other delicate surfaces get low-pressure soft washing, which kills algae and lifts grime without any damage.</p>
+      </details>
+      <details>
+        <summary>How often should my home's exterior be cleaned?</summary>
+        <p>Most St. Louis homes look their best with a cleaning every 12–24 months. Shaded lots and heavy tree cover grow algae and mildew faster, so those homes may need it more often.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap contact__grid">
+    <div class="reveal">
+      <p class="eyebrow" style="color:var(--aqua-soft)">Get started</p>
+      <h2>Free in-person estimate.</h2>
+      <p class="contact__sub">Tell us what you'd like cleaned and we'll come take a look and give you an honest quote.</p>
+      <div class="contact__lines">
+        <div class="contact__line">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <a href="tel:+13142296210">(314) 229-6210<small>Call or text</small></a>
+        </div>
+        <div class="contact__line">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <a href="mailto:Jack@primepowerwashstl.com">Jack@primepowerwashstl.com<small>Email us anytime</small></a>
+        </div>
+        <div class="contact__line">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+          <a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener">@primepowerwashstl<small>See recent jobs</small></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estimate requests are delivered by FormSubmit (free) to the address below.
+         ONE-TIME ACTIVATION: the first submission triggers an activation email to that
+         address — click the link inside it once and every request after that lands
+         directly in the inbox. To change the destination, replace the email in BOTH
+         the action attribute and the fetch URL in the form script near the bottom. -->
+    <form class="form reveal" id="estimateForm" action="https://formsubmit.co/Jack@primepowerwashstl.com" method="POST">
+      <input type="hidden" name="_subject" value="New estimate request — primepowerwashstl.com" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+      <div class="row">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Jane Smith" /></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required placeholder="(314) 000-0000" /></div>
+      </div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com" /></div>
+      <div class="field"><label for="address">Property address</label><input id="address" name="address" placeholder="Street, city" /></div>
+      <div class="field">
+        <label for="service">What do you need cleaned?</label>
+        <select id="service" name="service">
+          <option>Concrete / driveway</option>
+          <option>House washing</option>
+          <option>Roof soft wash</option>
+          <option>Window cleaning</option>
+          <option>Deck &amp; fence</option>
+          <option>Commercial property</option>
+          <option>Christmas lights</option>
+          <option>Multiple / not sure</option>
+        </select>
+      </div>
+      <div class="field"><label for="message">Anything else?</label><textarea id="message" name="message" rows="3" placeholder="Tell us about the job…"></textarea></div>
+      <button class="btn btn--primary" type="submit">Request my free estimate</button>
+      <p class="form__fine">Or call/text (314) 229-6210 — we usually respond same day.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a class="brand" href="#top" aria-label="Prime Power Wash home">
+        <img class="brand__logo brand__logo--footer" src="images/logo-white.png" width="103" height="40" loading="lazy" alt="Prime Power Wash" />
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About</a>
+        <a href="#areas">Areas</a><a href="#contact">Contact</a>
+        <a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="yr"></span> Prime Power Wash · St. Louis, Missouri</span>
+      <span>(314) 229-6210 · Jack@primepowerwashstl.com</span>
+    </div>
+  </div>
+</footer>
+
+<a class="callbar" href="tel:+13142296210"><span class="callbar__btn">&#9742;&#xFE0E;  Tap to call — free estimate</span></a>
+
+
+<!-- ---- gallery lightbox ---- -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Before and after photo viewer">
+  <div class="lb__backdrop"></div>
+  <div class="lb__panel">
+    <button class="lb__close" aria-label="Close viewer">&times;</button>
+    <div class="lb__stage">
+      <img class="lb__after" src="" alt="" />
+      <div class="lb__beforeWrap"><img class="lb__before" src="" alt="" /></div>
+      <div class="lb__divider"><span class="lb__knob">&#8596;</span></div>
+      <span class="lb__tag lb__tag--b">Before</span>
+      <span class="lb__tag lb__tag--a">After</span>
+      <input type="range" class="lb__range" min="0" max="100" value="50" aria-label="Drag to compare before and after" />
+    </div>
+    <div class="lb__bar">
+      <button class="lb__nav lb__prev" aria-label="Previous project">&#8592;</button>
+      <div class="lb__meta"><span class="lb__label"></span><span class="lb__count"></span></div>
+      <button class="lb__nav lb__next" aria-label="Next project">&#8594;</button>
+    </div>
+    <p class="lb__hint">Drag the photo to compare &middot; arrow keys to browse &middot; esc to close</p>
+  </div>
+</div>
+
+<script>
+/* ---- mobile menu ---- */
+const tog=document.getElementById('navToggle'),menu=document.getElementById('mobileMenu');
+tog.addEventListener('click',()=>{const o=menu.classList.toggle('open');tog.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');tog.setAttribute('aria-expanded','false')}));
+
+/* ---- before / after slider ---- */
+const ba=document.getElementById('ba'),range=document.getElementById('baRange');
+function setPos(v){ba.style.setProperty('--pos',v+'%')}
+range.addEventListener('input',e=>setPos(e.target.value));
+setPos(50);
+
+/* ---- scroll reveal ---- */
+const io=new IntersectionObserver((es)=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---- form: send via FormSubmit without leaving the page ---- */
+const form=document.getElementById('estimateForm');
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const btn=form.querySelector('button[type="submit"]');
+  const orig=btn.textContent;
+  btn.disabled=true;btn.textContent='Sending…';
+  fetch('https://formsubmit.co/ajax/Jack@primepowerwashstl.com',{
+    method:'POST',
+    headers:{'Accept':'application/json'},
+    body:new FormData(form)
+  }).then(r=>{
+    if(!r.ok)throw new Error('send failed');
+    form.innerHTML='<h3 style="font-family:var(--font-display);font-size:1.4rem">Request received ✓</h3>'+
+      '<p style="margin-top:.6rem">Thanks — we\'ll get back to you today with your free estimate. '+
+      'Need it faster? Call or text <a href="tel:+13142296210" style="font-weight:700">(314) 229-6210</a>.</p>';
+  }).catch(()=>{
+    btn.disabled=false;btn.textContent=orig;
+    // last-ditch fallback: open the visitor's email app pre-filled
+    const g=id=>encodeURIComponent(document.getElementById(id).value||'');
+    const body=`Name: ${g('name')}%0D%0APhone: ${g('phone')}%0D%0AEmail: ${g('email')}%0D%0AAddress: ${g('address')}%0D%0AService: ${g('service')}%0D%0A%0D%0A${g('message')}`;
+    window.location.href=`mailto:Jack@primepowerwashstl.com?subject=${encodeURIComponent('Free estimate request')}&body=${body}`;
+  });
+});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+<script>
+/* ---- gallery lightbox ---- */
+(function(){
+  var tiles=[].slice.call(document.querySelectorAll('.gallery .tile'));
+  if(!tiles.length) return;
+  var jobs=tiles.map(function(t){
+    return {
+      label:(t.querySelector('.tile__label')||{}).textContent||'',
+      after:t.querySelector('img:not(.img-before)').getAttribute('src'),
+      before:t.querySelector('.img-before').getAttribute('src')
+    };
+  });
+  var lb=document.getElementById('lightbox');
+  var stage=lb.querySelector('.lb__stage'),
+      imgA=lb.querySelector('.lb__after'),imgB=lb.querySelector('.lb__before'),
+      range=lb.querySelector('.lb__range'),
+      labelEl=lb.querySelector('.lb__label'),countEl=lb.querySelector('.lb__count'),
+      closeBtn=lb.querySelector('.lb__close'),
+      prevBtn=lb.querySelector('.lb__prev'),nextBtn=lb.querySelector('.lb__next');
+  var cur=0,lastFocus=null;
+
+  function setPos(v){stage.style.setProperty('--pos',v+'%')}
+  function show(i){
+    cur=(i+jobs.length)%jobs.length;
+    var j=jobs[cur];
+    imgA.src=j.after; imgA.alt=j.label+' — after cleaning';
+    imgB.src=j.before; imgB.alt=j.label+' — before cleaning';
+    labelEl.textContent=j.label;
+    countEl.textContent=(cur+1)+' / '+jobs.length;
+    range.value=50; setPos(50);
+  }
+  function open(i){
+    lastFocus=document.activeElement;
+    show(i);
+    lb.hidden=false;
+    document.body.style.overflow='hidden';
+    closeBtn.focus();
+  }
+  function close(){
+    lb.hidden=true;
+    document.body.style.overflow='';
+    if(lastFocus&&lastFocus.focus)lastFocus.focus();
+  }
+
+  tiles.forEach(function(t,i){
+    t.addEventListener('click',function(){open(i)});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();open(i)}
+    });
+  });
+  range.addEventListener('input',function(e){setPos(e.target.value)});
+  closeBtn.addEventListener('click',close);
+  prevBtn.addEventListener('click',function(){show(cur-1)});
+  nextBtn.addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(e){if(e.target.classList.contains('lb__backdrop'))close()});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')close();
+    else if(e.key==='ArrowLeft')show(cur-1);
+    else if(e.key==='ArrowRight')show(cur+1);
+  });
+})();
+</script>
+</body>
+</html>
