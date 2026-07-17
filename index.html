@@ -416,7 +416,13 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
 /* sticky mobile call bar */
 .callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;
   background:transparent;text-align:center;pointer-events:none;
+  transition:opacity .25s ease,transform .25s ease,visibility .25s;
   padding:.55rem .8rem calc(.7rem + env(safe-area-inset-bottom))}
+/* When the mobile menu is open, slide the tap-to-call pill away so it never
+   floats over the menu links. The menu has its own Call button, and the header
+   shows Call Now, so nothing is lost. (callbar is a following sibling of the
+   menu, so this needs no JS.) */
+.mobile-menu.open ~ .callbar{opacity:0;visibility:hidden;transform:translateY(130%)}
 .callbar__btn{display:block;background:var(--aqua);color:var(--ink);border-radius:999px;
   font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:.02em;
   padding:.85rem 1rem;pointer-events:auto;
