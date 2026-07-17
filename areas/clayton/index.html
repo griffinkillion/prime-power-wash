@@ -382,10 +382,16 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
   background:transparent;text-align:center;pointer-events:none;
   transition:opacity .25s ease,transform .25s ease,visibility .25s;
   padding:.55rem .8rem calc(.7rem + env(safe-area-inset-bottom))}
+/* Homepage only (body.home): the pill starts hidden so it doesn't cover the
+   hero's "Get a free estimate" button on load. site.js adds .show once the
+   hero button has scrolled clear. Other pages keep the pill visible always. */
+.home .callbar{opacity:0;visibility:hidden;transform:translateY(130%)}
+.home .callbar.show{opacity:1;visibility:visible;transform:none}
 /* When the mobile menu is open, slide the tap-to-call pill away so it never
    floats over the menu links. The menu has its own Call button, and the header
    shows Call Now, so nothing is lost. (callbar is a following sibling of the
-   menu, so this needs no JS.) */
+   menu, so this needs no JS.) Placed last so it wins over .home .callbar.show
+   when the menu is open. */
 .mobile-menu.open ~ .callbar{opacity:0;visibility:hidden;transform:translateY(130%)}
 .callbar__btn{display:block;background:var(--aqua);color:var(--ink);border-radius:999px;
   font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:.02em;
