@@ -1,0 +1,5 @@
+# Raw phone footage stays local — this is a public GitHub Pages repo, so
+# anything committed here is served on the live site and bloats every clone.
+# Ship the encoded derivatives (hero-loop.mp4, hero-poster.jpg), not the source.
+*.MOV
+*.mov
