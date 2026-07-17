@@ -40,16 +40,33 @@ a.svc:hover{border-color:var(--brand)}
 
 const PHONE_SVG = '<svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
+const svcMenu = SERVICES.map((s) => `          <a href="/services/${s.slug}/">${s.nav}</a>`).join('\n');
+const areaMenu = AREAS.map((a) => `          <a href="/areas/${a.slug}/">${a.name}</a>`).join('\n');
+const svcMobile = SERVICES.map((s) => `      <a href="/services/${s.slug}/">${s.nav}</a>`).join('\n');
+const areaMobile = AREAS.map((a) => `      <a href="/areas/${a.slug}/">${a.name}</a>`).join('\n');
+
 const HEADER = `<header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="Prime Power Wash home">
       <img class="brand__logo" src="/images/logo-dark.png" width="119" height="46" alt="Prime Power Wash" />
     </a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="/services/">Services</a>
+      <div class="has-menu">
+        <a href="/services/">Services</a>
+        <div class="dropdown">
+${svcMenu}
+          <a class="dropdown__all" href="/services/">All services &rarr;</a>
+        </div>
+      </div>
       <a href="/#work">Our Work</a>
       <a href="/#about">About</a>
-      <a href="/areas/">Areas</a>
+      <div class="has-menu">
+        <a href="/areas/">Areas</a>
+        <div class="dropdown dropdown--cols">
+${areaMenu}
+          <a class="dropdown__all" href="/areas/">All areas &rarr;</a>
+        </div>
+      </div>
       <a href="/#contact">Contact</a>
     </nav>
     <div class="nav__cta">
@@ -63,10 +80,22 @@ const HEADER = `<header class="site-header">
   </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="/services/">Services</a>
+  <div class="m-group">
+    <button class="m-acc" type="button" aria-expanded="false">Services</button>
+    <div class="m-sub">
+      <a href="/services/">All services</a>
+${svcMobile}
+    </div>
+  </div>
   <a href="/#work">Our Work</a>
   <a href="/#about">About</a>
-  <a href="/areas/">Areas</a>
+  <div class="m-group">
+    <button class="m-acc" type="button" aria-expanded="false">Areas</button>
+    <div class="m-sub">
+      <a href="/areas/">All areas</a>
+${areaMobile}
+    </div>
+  </div>
   <a href="/#contact">Contact</a>
   <a class="btn btn--primary" href="tel:+13142296210">Call (314) 229-6210</a>
 </div>`;
@@ -97,6 +126,7 @@ const SCRIPT = `<script>
 const tog=document.getElementById('navToggle'),menu=document.getElementById('mobileMenu');
 tog.addEventListener('click',()=>{const o=menu.classList.toggle('open');tog.setAttribute('aria-expanded',o)});
 menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');tog.setAttribute('aria-expanded','false')}));
+document.querySelectorAll('.mobile-menu .m-acc').forEach(btn=>btn.addEventListener('click',()=>{const sub=btn.nextElementSibling;btn.setAttribute('aria-expanded',sub.classList.toggle('open'))}));
 const io=new IntersectionObserver((es)=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
