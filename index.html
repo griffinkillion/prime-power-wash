@@ -237,6 +237,19 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
   font-weight:600;font-size:.95rem;color:#fff;white-space:nowrap}
 .hero__trust svg{width:17px;height:17px;color:var(--aqua);flex:none}
 .hero__actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+/* Homepage hero: estimate + phone buttons stay side by side, never stacking.
+   On phones they split the row and the primary label shortens so both fit. */
+.btn-short{display:none}
+.hero .hero__actions{flex-wrap:nowrap}
+.hero .hero__actions .btn{justify-content:center}
+.hero .hero__actions .btn-ic{width:17px;height:17px;flex:none}
+@media(max-width:560px){
+  .hero .hero__actions{gap:.6rem}
+  .hero .hero__actions .btn{flex:1 1 0;min-width:0;padding-left:.7em;padding-right:.7em;font-size:.92rem}
+  .hero .hero__actions .btn-full{display:none}
+  .hero .hero__actions .btn-short{display:inline}
+  .hero .hero__actions .btn-ic{display:none}
+}
 
 @media(max-width:860px){
   .hero__inner{grid-template-columns:1fr;text-align:left}
@@ -813,7 +826,8 @@ body.washing{overflow:hidden}
       </ul>
 
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#contact">Get a free estimate</a>
+        <a class="btn btn--primary" href="#contact"><span class="btn-full">Get a free estimate</span><span class="btn-short">Free estimate</span></a>
+        <a class="btn btn--ghost" href="tel:+13142296210"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>(314) 229-6210</a>
       </div>
     </div>
 
