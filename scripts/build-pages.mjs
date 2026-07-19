@@ -72,7 +72,7 @@ ${areaMenu}
     <div class="nav__cta">
       <a class="nav__phone" href="tel:+13142296210">${PHONE_SVG} (314) 229-6210</a>
       <a class="btn btn--primary nav__btn--est" href="/#contact">Free Estimate</a>
-      <a class="btn btn--primary nav__btn--call" href="tel:+13142296210">${PHONE_SVG} Call Now</a>
+      <a class="btn btn--primary nav__btn--call" href="/#contact">Free Estimate</a>
     </div>
     <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
