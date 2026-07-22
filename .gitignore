@@ -10,3 +10,10 @@
 *.md
 retainer*
 reports/
+
+# Phone originals. Jack's photos arrive as HEIC (often misnamed .webp and
+# rotated with no EXIF tag). Browsers cannot render HEIC — always convert to
+# real WebP and ship the derivative. Originals live in
+# ../prime-power-wash/assets/source/, never here.
+*.HEIC
+*.heic
