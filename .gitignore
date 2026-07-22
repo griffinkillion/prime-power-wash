@@ -3,3 +3,10 @@
 # Ship the encoded derivatives (hero-loop.mp4, hero-poster.jpg), not the source.
 *.MOV
 *.mov
+
+# Business files never reach a public repo — the retainer deal, reports, and
+# notes live in ../prime-power-wash/ (the non-repo folder), not here. Blog
+# posts ship as .html; a .md in this repo is always a mistake.
+*.md
+retainer*
+reports/
