@@ -156,6 +156,14 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
 .nav__toggle{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:6px}
 .nav__toggle svg{width:26px;height:26px}
 .nav__btn--call{display:none}
+/* Desktop social icons: only shown where the top bar has spare room (>=1120px). */
+.nav__social-d{display:none}
+@media(min-width:1120px){
+  .nav__social-d{display:flex;align-items:center;gap:.25rem}
+  .nav__social-d a{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;color:var(--brand);transition:background .12s}
+  .nav__social-d a:hover{background:var(--foam)}
+  .nav__social-d svg{width:19px;height:19px}
+}
 @media(max-width:900px){
   .nav__links,.nav__phone{display:none}
   .nav__toggle{display:block}
@@ -766,6 +774,16 @@ body.washing{overflow:hidden}
            sticky bottom call bar, so the mobile header pushes the free estimate instead. -->
       <a class="btn btn--primary nav__btn--est" href="#contact">Free Estimate</a>
       <a class="btn btn--primary nav__btn--call" href="#contact">Free Estimate</a>
+      <!-- Desktop-only social icons. Shown only on wide screens (>=1120px) where
+           the top bar has room; mobile uses the "Follow us" row in the menu. -->
+      <div class="nav__social-d" aria-label="Prime Power Wash social profiles">
+        <a href="https://www.facebook.com/people/Prime-Power-Wash/61591248401901/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
     </div>
 
     <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
