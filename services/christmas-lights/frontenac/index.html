@@ -513,6 +513,32 @@ body.washing{overflow:hidden}
 .related a:hover{border-color:var(--brand);color:var(--brand)}
 a.svc{text-decoration:none;color:inherit}
 a.svc:hover{border-color:var(--brand)}
+
+/* ============================================================
+   FESTIVE STRING LIGHTS (Christmas Light pages only)
+============================================================ */
+.xmas-string{position:absolute;top:0;left:0;right:0;height:34px;z-index:2;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  padding:0 clamp(14px,4vw,48px);pointer-events:none}
+.xmas-string::before{content:"";position:absolute;left:0;right:0;top:5px;height:2px;
+  background:rgba(255,255,255,.16)}
+.xmas-string .bulb{position:relative;flex:0 0 auto;width:11px;height:16px;margin-top:12px;
+  border-radius:50% 50% 46% 46%;animation:xmasTwinkle 2.8s ease-in-out infinite}
+.xmas-string .bulb::before{content:"";position:absolute;top:-7px;left:50%;transform:translateX(-50%);
+  width:1px;height:7px;background:rgba(255,255,255,.32)}
+.xmas-string .bulb::after{content:"";position:absolute;top:-3px;left:50%;transform:translateX(-50%);
+  width:5px;height:3px;border-radius:1px;background:#c3ccda}
+.xmas-string .bulb:nth-child(5n+1){background:radial-gradient(circle at 38% 30%,#ff9a9a,#e5484d);box-shadow:0 0 11px 2px rgba(229,72,77,.65)}
+.xmas-string .bulb:nth-child(5n+2){background:radial-gradient(circle at 38% 30%,#83e3b4,#30a46c);box-shadow:0 0 11px 2px rgba(48,164,108,.6)}
+.xmas-string .bulb:nth-child(5n+3){background:radial-gradient(circle at 38% 30%,#ffe293,#f5a623);box-shadow:0 0 11px 2px rgba(245,166,35,.6)}
+.xmas-string .bulb:nth-child(5n+4){background:radial-gradient(circle at 38% 30%,#a6e9f4,#22c9e0);box-shadow:0 0 11px 2px rgba(34,201,224,.6)}
+.xmas-string .bulb:nth-child(5n+5){background:radial-gradient(circle at 38% 30%,#cdacff,#8b5cf6);box-shadow:0 0 11px 2px rgba(139,92,246,.6)}
+.xmas-string .bulb:nth-child(2n){animation-delay:.9s}
+.xmas-string .bulb:nth-child(3n){animation-delay:1.5s}
+.xmas-string .bulb:nth-child(5n){animation-delay:2.1s}
+@keyframes xmasTwinkle{0%,100%{opacity:1}50%{opacity:.5}}
+@media(max-width:600px){.xmas-string .bulb:nth-child(2n){display:none}}
+@media(prefers-reduced-motion:reduce){.xmas-string .bulb{animation:none}}
 </style>
 </head>
 <body>
@@ -618,6 +644,7 @@ a.svc:hover{border-color:var(--brand)}
 </div>
 
 <section class="pagehero">
+    <div class="xmas-string" aria-hidden="true"><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span></div>
   <div class="wrap">
     <p class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / <a href="/services/christmas-lights/">Christmas Lights</a> / Frontenac</p>
     <h1>Christmas Light Installation in <em>Frontenac</em></h1>
