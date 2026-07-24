@@ -519,6 +519,22 @@ a.svc:hover{border-color:var(--brand)}
 .footer__social a{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;padding:0;color:rgba(255,255,255,.7);transition:color .15s,background .15s}
 .footer__social a:hover{color:#fff;background:rgba(255,255,255,.08)}
 .footer__social svg{width:19px;height:19px}
+
+/* Desktop social icons: only shown where the top bar has spare room (>=1120px). */
+.nav__social-d{display:none}
+@media(min-width:1120px){
+  .nav__social-d{display:flex;align-items:center;gap:.25rem}
+  .nav__social-d a{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;color:var(--brand);transition:background .12s}
+  .nav__social-d a:hover{background:var(--foam)}
+  .nav__social-d svg{width:19px;height:19px}
+}
+/* Follow-us social row at the foot of the mobile menu. Tap targets are 44px. */
+.mobile-menu .m-social{display:flex;align-items:center;gap:.9rem;margin-top:1.2rem;padding-top:1.1rem;border-top:1px solid rgba(8,28,72,.1)}
+.mobile-menu .m-social__label{font-family:var(--font-display);font-weight:600;color:var(--ink);font-size:.95rem}
+.mobile-menu .m-social__icons{display:flex;gap:.5rem}
+.mobile-menu .m-social__icons a{display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:12px;color:var(--brand);background:var(--foam)}
+.mobile-menu .m-social__icons a:active{background:rgba(34,201,224,.24)}
+.mobile-menu .m-social__icons svg{width:22px;height:22px}
 </style>
 </head>
 <body>
@@ -573,6 +589,14 @@ a.svc:hover{border-color:var(--brand)}
       <a class="nav__phone" href="tel:+13142296210"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> (314) 229-6210</a>
       <a class="btn btn--primary nav__btn--est" href="/#contact">Free Estimate</a>
       <a class="btn btn--primary nav__btn--call" href="/#contact">Free Estimate</a>
+      <div class="nav__social-d" aria-label="Prime Power Wash social profiles">
+        <a href="https://www.facebook.com/people/Prime-Power-Wash/61591248401901/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
     </div>
     <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -621,6 +645,17 @@ a.svc:hover{border-color:var(--brand)}
   </div>
   <a href="/#contact">Contact</a>
   <a class="btn btn--primary" href="tel:+13142296210">Call (314) 229-6210</a>
+  <div class="m-social">
+    <span class="m-social__label">Follow us</span>
+    <div class="m-social__icons">
+      <a href="https://www.facebook.com/people/Prime-Power-Wash/61591248401901/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </div>
 </div>
 
 <section class="pagehero">
