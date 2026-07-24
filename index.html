@@ -546,6 +546,12 @@ body.washing{overflow:hidden}
   html{scroll-behavior:auto}
 }
 :focus-visible{outline:3px solid var(--aqua);outline-offset:2px;border-radius:4px}
+
+/* Footer social icons (match header glyphs, styled for the dark footer) */
+.footer__social{display:inline-flex;align-items:center;gap:.5rem}
+.footer__social a{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;padding:0;color:rgba(255,255,255,.7);transition:color .15s,background .15s}
+.footer__social a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.footer__social svg{width:19px;height:19px}
 </style>
 </head>
 
@@ -1181,7 +1187,7 @@ body.washing{overflow:hidden}
       <nav class="footer__links" aria-label="Footer">
         <a href="/services/">Services</a><a href="#work">Our Work</a><a href="#about">About</a><a href="/blog/">Advice</a>
         <a href="/areas/">Areas</a><a href="#contact">Contact</a>
-        <a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener">Instagram</a>
+        <span class="footer__social"><a href="https://www.facebook.com/people/Prime-Power-Wash/61591248401901/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/primepowerwashstl/" target="_blank" rel="noopener" aria-label="Prime Power Wash on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></span>
       </nav>
     </div>
     <div class="footer__bottom">
