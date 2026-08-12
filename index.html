@@ -552,6 +552,15 @@ body.washing{overflow:hidden}
 .footer__social a{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;padding:0;color:rgba(255,255,255,.7);transition:color .15s,background .15s}
 .footer__social a:hover{color:#fff;background:rgba(255,255,255,.08)}
 .footer__social svg{width:19px;height:19px}
+
+/* hero: embedded estimate form replaces the trailer photo (Aug 12 request) */
+.hero__lead{align-self:center}
+.hero__form{background:rgba(6,24,38,.66);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 60px -25px rgba(0,0,0,.6)}
+.hero__form .field{margin-bottom:.85rem}
+.hero__form .eyebrow{margin:0 0 .3rem}
+.hero__form-title{font-family:var(--font-display);font-weight:800;font-size:1.25rem;color:#fff;margin:0 0 .9rem}
+.hero__form .btn{width:100%;justify-content:center}
+.hero__form .form__fine{margin-top:.7rem}
 </style>
 </head>
 
@@ -734,13 +743,15 @@ body.washing{overflow:hidden}
       <div class="has-menu">
         <a href="/services/">Services</a>
         <div class="dropdown">
-          <a href="/services/concrete-driveways/">Concrete &amp; Driveways</a>
           <a href="/services/house-washing/">House Washing</a>
-          <a href="/services/roof-soft-washing/">Roof Soft Washing</a>
-          <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
+          <a href="/services/roof-soft-washing/">Roof Cleaning</a>
+          <a href="/services/gutter-cleaning/">Gutter Cleaning &amp; Brightening</a>
           <a href="/services/window-cleaning/">Window Cleaning</a>
-          <a href="/services/deck-fence/">Deck &amp; Fence</a>
-          <a href="/services/christmas-lights/">Christmas Lights</a>
+          <a href="/services/concrete-driveways/">Driveway Washing</a>
+          <a href="/services/concrete-cleaning/">Concrete Cleaning</a>
+          <a href="/services/concrete-paver-sealing/">Concrete &amp; Paver Sealing</a>
+          <a href="/services/deck-fence/">Fence &amp; Deck Restoration</a>
+          <a href="/services/christmas-lights/">Christmas Light Installation</a>
           <a href="/services/commercial/">Commercial</a>
           <a class="dropdown__all" href="/services/">All services &rarr;</a>
         </div>
@@ -805,13 +816,15 @@ body.washing{overflow:hidden}
     <button class="m-acc" type="button" aria-expanded="false">Services</button>
     <div class="m-sub">
       <a href="/services/">All services</a>
-      <a href="/services/concrete-driveways/">Concrete &amp; Driveways</a>
       <a href="/services/house-washing/">House Washing</a>
-      <a href="/services/roof-soft-washing/">Roof Soft Washing</a>
-      <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
+      <a href="/services/roof-soft-washing/">Roof Cleaning</a>
+      <a href="/services/gutter-cleaning/">Gutter Cleaning &amp; Brightening</a>
       <a href="/services/window-cleaning/">Window Cleaning</a>
-      <a href="/services/deck-fence/">Deck &amp; Fence</a>
-      <a href="/services/christmas-lights/">Christmas Lights</a>
+      <a href="/services/concrete-driveways/">Driveway Washing</a>
+      <a href="/services/concrete-cleaning/">Concrete Cleaning</a>
+      <a href="/services/concrete-paver-sealing/">Concrete &amp; Paver Sealing</a>
+      <a href="/services/deck-fence/">Fence &amp; Deck Restoration</a>
+      <a href="/services/christmas-lights/">Christmas Light Installation</a>
       <a href="/services/commercial/">Commercial</a>
     </div>
   </div>
@@ -884,10 +897,40 @@ body.washing{overflow:hidden}
       </div>
     </div>
 
-    <!-- HERO SHOT — Jack's branded rig -->
-    <div class="hero__shot">
-      <img src="images/truck-shot.webp" width="1200" height="968" fetchpriority="high"
-           alt="The Prime Power Wash truck and branded equipment trailer, serving the St. Louis area" />
+    <!-- HERO FORM — the estimate form lives in the header now (Jack, Aug 12).
+         The trailer photo it replaced is images/truck-shot.webp if it ever comes back. -->
+    <div class="hero__lead">
+      <form class="form hero__form" id="heroForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="38ff6b4d-d1d2-4986-ab35-2a7956e4953f" />
+        <input type="hidden" name="subject" value="New estimate request — primepowerwashstl.com (hero form)" />
+        <input type="hidden" name="from_name" value="Prime Power Wash Website" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+        <p class="eyebrow" style="color:var(--aqua-soft)">Get Started</p>
+        <p class="hero__form-title">Request my free estimate</p>
+        <div class="row">
+          <div class="field"><label for="hf-name">Name</label><input id="hf-name" name="name" required placeholder="Jane Smith" /></div>
+          <div class="field"><label for="hf-phone">Phone</label><input id="hf-phone" name="phone" type="tel" required placeholder="(314) 000-0000" /></div>
+        </div>
+        <div class="field"><label for="hf-address">Property address</label><input id="hf-address" name="address" required placeholder="Street, city" /></div>
+        <div class="field">
+          <label for="hf-service">What do you need cleaned?</label>
+          <select id="hf-service" name="service">
+            <option>House washing</option>
+            <option>Roof cleaning</option>
+            <option>Gutter cleaning &amp; brightening</option>
+            <option>Window cleaning</option>
+            <option>Driveway washing</option>
+            <option>Concrete cleaning</option>
+            <option>Concrete &amp; paver sealing</option>
+            <option>Fence &amp; deck restoration</option>
+            <option>Christmas lights</option>
+            <option>Commercial property</option>
+            <option>Multiple / not sure</option>
+          </select>
+        </div>
+        <button class="btn btn--primary" type="submit">Request my free estimate</button>
+        <p class="form__fine">Or call/text (314) 229-6210 — we usually respond same day.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -903,59 +946,73 @@ body.washing{overflow:hidden}
 
     <div class="svc-grid">
       <article class="svc reveal">
-        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="svc__spec">Surface cleaner · flatwork</span>
-        <h3><a href="/services/concrete-driveways/" style="color:inherit;text-decoration:none">Concrete &amp; Driveways</a></h3>
-        <p>Driveways, walkways and patios stripped of dirt, oil and organic build-up — back to their original color.</p>
-      </article>
-
-      <article class="svc reveal">
         <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
-        <span class="svc__spec">Soft wash · low PSI</span>
+        <span class="svc__spec">Soft wash &middot; low PSI</span>
         <h3><a href="/services/house-washing/" style="color:inherit;text-decoration:none">House Washing</a></h3>
         <p>A gentle soft-wash that lifts grime from brick, vinyl and stucco without damaging your siding or finish.</p>
       </article>
 
       <article class="svc reveal">
         <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12l9-8 9 8M5 11v9h14v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="svc__spec">No-pressure · algae &amp; mold</span>
-        <h3><a href="/services/roof-soft-washing/" style="color:inherit;text-decoration:none">Roof Soft Washing</a></h3>
+        <span class="svc__spec">No-pressure &middot; algae &amp; mold</span>
+        <h3><a href="/services/roof-soft-washing/" style="color:inherit;text-decoration:none">Roof Cleaning</a></h3>
         <p>Removes black algae streaks, moss and mold to restore curb appeal and extend the life of your roof.</p>
       </article>
 
       <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v13M7 12l5 6 5-6M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Cleared &middot; flushed &middot; brightened</span>
+        <h3><a href="/services/gutter-cleaning/" style="color:inherit;text-decoration:none">Gutter Cleaning &amp; Brightening</a></h3>
+        <p>Debris cleared, downspouts flushed, and the black tiger stripes washed off the gutter faces.</p>
+      </article>
+
+      <article class="svc reveal">
         <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="1" stroke="currentColor" stroke-width="2"/><path d="M12 3v18M4 12h16" stroke="currentColor" stroke-width="2"/></svg></span>
-        <span class="svc__spec">Streak-free · sills &amp; trim</span>
+        <span class="svc__spec">Streak-free &middot; sills &amp; trim</span>
         <h3><a href="/services/window-cleaning/" style="color:inherit;text-decoration:none">Window Cleaning</a></h3>
         <p>Crystal-clear glass plus the sills and trim that collect a year's worth of dust, pollen and cobwebs.</p>
       </article>
 
       <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Surface cleaner &middot; even finish</span>
+        <h3><a href="/services/concrete-driveways/" style="color:inherit;text-decoration:none">Driveway Washing</a></h3>
+        <p>Driveways stripped of dirt, oil and organic buildup, back to an even, original color.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Patios &middot; pool decks &middot; walkways</span>
+        <h3><a href="/services/concrete-cleaning/" style="color:inherit;text-decoration:none">Concrete Cleaning</a></h3>
+        <p>Patios, walkways, pool decks and steps cleaned to a uniform finish with the grime lifted out.</p>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Clean first &middot; seal &middot; protect</span>
+        <h3><a href="/services/concrete-paver-sealing/" style="color:inherit;text-decoration:none">Concrete &amp; Paver Sealing</a></h3>
+        <p>A clean, sealed surface sheds water, salt and stains instead of soaking them in.</p>
+      </article>
+
+      <article class="svc reveal">
         <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9h18M3 15h18M6 4v16M18 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
-        <span class="svc__spec">Wood-safe · restore</span>
-        <h3><a href="/services/deck-fence/" style="color:inherit;text-decoration:none">Deck &amp; Fence</a></h3>
+        <span class="svc__spec">Wood-safe &middot; restore</span>
+        <h3><a href="/services/deck-fence/" style="color:inherit;text-decoration:none">Fence &amp; Deck Restoration</a></h3>
         <p>Careful cleaning for all deck and fence types, lifting away gray weathering to reveal the wood beneath.</p>
       </article>
 
       <article class="svc reveal">
+        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="svc__spec">Design &middot; install &middot; takedown</span>
+        <h3><a href="/services/christmas-lights/" style="color:inherit;text-decoration:none">Christmas Light Installation</a></h3>
+        <p>Professional holiday light design, installation and takedown. Skip the ladder this year.</p>
+      </article>
+
+      <article class="svc reveal">
         <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M5 21V7h6v14M11 21V3h8v18M7 11h2M7 15h2M15 7h2M15 11h2M15 15h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="svc__spec">HOA · storefronts</span>
+        <span class="svc__spec">HOA &middot; storefronts</span>
         <h3><a href="/services/commercial/" style="color:inherit;text-decoration:none">Commercial</a></h3>
         <p>Storefronts, HOAs and commercial properties across St. Louis kept clean and presentable on your schedule.</p>
-      </article>
-
-      <article class="svc reveal">
-        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v13M7 12l5 6 5-6M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="svc__spec">Gutter cleaning &amp; whitening</span>
-        <h3><a href="/services/gutter-cleaning/" style="color:inherit;text-decoration:none">Gutter Cleaning &amp; Whitening</a></h3>
-        <p>Debris cleared, downspouts flushed, and the black tiger stripes washed off the gutter faces.</p>
-      </article>
-
-      <article class="svc reveal">
-        <span class="svc__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="svc__spec">Holiday lighting</span>
-        <h3><a href="/services/christmas-lights/" style="color:inherit;text-decoration:none">Christmas Lights</a></h3>
-        <p>Professional holiday light design, installation and takedown. Skip the ladder this year.</p>
       </article>
     </div>
   </div>
@@ -1159,14 +1216,16 @@ body.washing{overflow:hidden}
       <div class="field">
         <label for="service">What do you need cleaned?</label>
         <select id="service" name="service">
-          <option>Concrete / driveway</option>
           <option>House washing</option>
-          <option>Roof soft wash</option>
+          <option>Roof cleaning</option>
+          <option>Gutter cleaning &amp; brightening</option>
           <option>Window cleaning</option>
-          <option>Deck &amp; fence</option>
-          <option>Gutter cleaning</option>
-          <option>Commercial property</option>
+          <option>Driveway washing</option>
+          <option>Concrete cleaning</option>
+          <option>Concrete &amp; paver sealing</option>
+          <option>Fence &amp; deck restoration</option>
           <option>Christmas lights</option>
+          <option>Commercial property</option>
           <option>Multiple / not sure</option>
         </select>
       </div>
@@ -1236,30 +1295,34 @@ document.querySelectorAll('.mobile-menu .m-acc').forEach(btn=>btn.addEventListen
 const io=new IntersectionObserver((es)=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-/* ---- form: send via FormSubmit without leaving the page ---- */
-const form=document.getElementById('estimateForm');
-form.addEventListener('submit',e=>{
-  e.preventDefault();
-  const btn=form.querySelector('button[type="submit"]');
-  const orig=btn.textContent;
-  btn.disabled=true;btn.textContent='Sending…';
-  fetch('https://api.web3forms.com/submit',{
-    method:'POST',
-    headers:{'Accept':'application/json'},
-    body:new FormData(form)
-  }).then(r=>r.json()).then(res=>{
-    if(!res.success)throw new Error('send failed');
-    form.innerHTML='<h3 style="font-family:var(--font-display);font-size:1.4rem">Request received ✓</h3>'+
-      '<p style="margin-top:.6rem">Thanks — we\'ll get back to you today with your free estimate. '+
-      'Need it faster? Call or text <a href="tel:+13142296210" style="font-weight:700">(314) 229-6210</a>.</p>';
-  }).catch(()=>{
-    btn.disabled=false;btn.textContent=orig;
-    // last-ditch fallback: open the visitor's email app pre-filled
-    const g=id=>encodeURIComponent(document.getElementById(id).value||'');
-    const body=`Name: ${g('name')}%0D%0APhone: ${g('phone')}%0D%0AEmail: ${g('email')}%0D%0AAddress: ${g('address')}%0D%0AService: ${g('service')}%0D%0A%0D%0A${g('message')}`;
-    window.location.href=`mailto:Jack@primepowerwashstl.com?subject=${encodeURIComponent('Free estimate request')}&body=${body}`;
+/* ---- forms (hero + contact): send via Web3Forms without leaving the page ---- */
+function bindEstimate(form){
+  if(!form)return;
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const btn=form.querySelector('button[type="submit"]');
+    const orig=btn.textContent;
+    btn.disabled=true;btn.textContent='Sending…';
+    fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Accept':'application/json'},
+      body:new FormData(form)
+    }).then(r=>r.json()).then(res=>{
+      if(!res.success)throw new Error('send failed');
+      form.innerHTML='<h3 style="font-family:var(--font-display);font-size:1.4rem">Request received ✓</h3>'+
+        '<p style="margin-top:.6rem">Thanks — we\'ll get back to you today with your free estimate. '+
+        'Need it faster? Call or text <a href="tel:+13142296210" style="font-weight:700">(314) 229-6210</a>.</p>';
+    }).catch(()=>{
+      btn.disabled=false;btn.textContent=orig;
+      // last-ditch fallback: open the visitor's email app pre-filled
+      const g=n=>{const el=form.elements[n];return encodeURIComponent((el&&el.value)||'')};
+      const body=`Name: ${g('name')}%0D%0APhone: ${g('phone')}%0D%0AEmail: ${g('email')}%0D%0AAddress: ${g('address')}%0D%0AService: ${g('service')}%0D%0A%0D%0A${g('message')}`;
+      window.location.href=`mailto:Jack@primepowerwashstl.com?subject=${encodeURIComponent('Free estimate request')}&body=${body}`;
+    });
   });
-});
+}
+bindEstimate(document.getElementById('estimateForm'));
+bindEstimate(document.getElementById('heroForm'));
 
 document.getElementById('yr').textContent=new Date().getFullYear();
 

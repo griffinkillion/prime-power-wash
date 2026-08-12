@@ -1,3 +1,9 @@
+/* !! STALE — DO NOT RUN (2026-08-12) !!
+   The live pages have drifted far past this generator: social icons in headers,
+   gutter-cleaning + christmas-lights services, 170 service-area combo pages,
+   galleries + lightbox on every page, and the Aug 12 rename to Jack's 10-service
+   list (see DECISIONS.md). Rerunning this would clobber all of it. Treat the
+   checked-in HTML as the source of truth until this script is rebuilt. */
 /* Generates the SEO pages (6 services, 17 areas, 2 hubs) + sitemap.xml.
    Run:  node scripts/build-pages.mjs   (from the repo root)
 
