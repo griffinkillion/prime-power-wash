@@ -284,6 +284,15 @@ h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05;letter
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 @media(max-width:860px){.gallery{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.gallery{grid-template-columns:1fr}}
+/* ---- static side-by-side pair (mismatched framing, no slider) ---- */
+.pair{position:relative;grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:4px;border-radius:14px;overflow:hidden;background:#0c2630;box-shadow:0 18px 36px -26px rgba(0,0,0,.6)}
+.pair__side{position:relative;aspect-ratio:4/3;overflow:hidden}
+.pair__side img{width:100%;height:100%;object-fit:cover;display:block}
+.pair__tag{position:absolute;left:10px;top:10px;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:.35em .7em;border-radius:999px;backdrop-filter:blur(4px)}
+.pair__tag--after{background:rgba(34,201,224,.92);color:var(--ink);font-weight:700}
+.pair__cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:1.5rem .95rem .8rem;font-size:.92rem;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,.45) 55%,rgba(0,0,0,0))}
+@media(max-width:520px){.pair{grid-column:span 1;grid-template-columns:1fr;gap:3px}.pair__cap{position:static;padding:.7rem .85rem;font-size:.86rem;color:#dceaf5;background:rgba(0,0,0,.3)}}
+
 .tile{
   position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;cursor:pointer;
   background:#0c2630;box-shadow:0 18px 36px -26px rgba(0,0,0,.6);
@@ -697,6 +706,22 @@ a.svc:hover{border-color:var(--brand)}
 <section class="section"><div class="wrap">
   <div class="section__head reveal"><p class="eyebrow">Our work</p><h2>Real jobs, real results.</h2><p>Every photo below is our own work around St. Louis. Tap any photo to compare the before and after.</p></div>
   <div class="gallery">
+      <figure class="pair reveal">
+        <div class="pair__side">
+          <img src="/images/gutter-debris-before.webp" alt="Gutter trough packed with rotting leaf debris and shingle grit before cleaning" loading="lazy" />
+          <span class="pair__tag">Before</span>
+        </div>
+        <div class="pair__side">
+          <img src="/images/gutter-debris-after.webp" alt="The same gutter run cleared out and flushed after cleaning" loading="lazy" />
+          <span class="pair__tag pair__tag--after">After</span>
+        </div>
+        <figcaption class="pair__cap">Debris cleared by hand, bagged, and every downspout flushed before we leave.</figcaption>
+      </figure>
+      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: gutter faces">
+        <img src="/images/gutter-brighten-after.webp" alt="Gutter faces and soffit bright white after a brightening treatment" loading="lazy" />
+        <img class="img-before" src="/images/gutter-brighten-before.webp" alt="Gutter faces streaked with dark oxidation tiger stripes before brightening" loading="lazy" />
+        <span class="tile__label">Gutter faces</span><span class="tile__hint">Click to compare</span>
+      </div>
       <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: brick">
         <img src="/images/patio-after.webp" alt="Brick wall and walkway clean after power washing" loading="lazy" />
         <img class="img-before" src="/images/patio-before.webp" alt="Brick wall stained with grime before power washing in St. Louis" loading="lazy" />
@@ -707,25 +732,10 @@ a.svc:hover{border-color:var(--brand)}
         <img class="img-before" src="/images/gal-deck-before.webp" alt="Wood deck covered in leaf debris and algae before cleaning" loading="lazy" />
         <span class="tile__label">Deck</span><span class="tile__hint">Click to compare</span>
       </div>
-      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: steps">
-        <img src="/images/steps-after.webp" alt="Restored concrete steps after pressure washing" loading="lazy" />
-        <img class="img-before" src="/images/steps-before.webp" alt="Grimy concrete steps before pressure washing" loading="lazy" />
-        <span class="tile__label">Steps</span><span class="tile__hint">Click to compare</span>
-      </div>
       <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: driveway">
         <img src="/images/gal-driveway-after.webp" alt="Concrete driveway restored to its original color after pressure washing" loading="lazy" />
         <img class="img-before" src="/images/gal-driveway-before.webp" alt="Concrete driveway darkened with dirt and organic staining before pressure washing" loading="lazy" />
         <span class="tile__label">Driveway</span><span class="tile__hint">Click to compare</span>
-      </div>
-      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: canvas">
-        <img src="/images/backyard-after.webp" alt="Striped canvas awning bright and clean after washing" loading="lazy" />
-        <img class="img-before" src="/images/backyard-before.webp" alt="Striped canvas awning weathered and dirty before cleaning" loading="lazy" />
-        <span class="tile__label">Canvas</span><span class="tile__hint">Click to compare</span>
-      </div>
-      <div class="tile reveal" tabindex="0" role="button" aria-label="Before and after: fencing">
-        <img src="/images/fence-after.webp" alt="White fence bright and clean after soft washing" loading="lazy" />
-        <img class="img-before" src="/images/fence-before.webp" alt="White fence covered in algae and grime before cleaning" loading="lazy" />
-        <span class="tile__label">Fencing</span><span class="tile__hint">Click to compare</span>
       </div>
   </div>
 </div></section>
